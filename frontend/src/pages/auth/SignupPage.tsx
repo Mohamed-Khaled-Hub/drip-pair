@@ -258,7 +258,6 @@ const SignupPage = () => {
                     type='date'
                     value={dob.value}
                     isValid={dob.isValid}
-                    placeholder='DOB*'
                     notValidMessage={dob.notValidMessage}
                     onChange={(e) =>
                         setDob({
