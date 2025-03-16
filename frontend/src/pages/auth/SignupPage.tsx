@@ -158,7 +158,7 @@ const SignupPage = () => {
                 <AuthInput
                     type='text'
                     autoFocus
-                    placeholder='First Name'
+                    placeholder='First Name*'
                     value={firstName.value}
                     isValid={firstName.isValid}
                     notValidMessage={firstName.notValidMessage}
@@ -172,7 +172,7 @@ const SignupPage = () => {
                 />
                 <AuthInput
                     type='text'
-                    placeholder='Last Name'
+                    placeholder='Last Name*'
                     value={lastName.value}
                     isValid={lastName.isValid}
                     notValidMessage={lastName.notValidMessage}
@@ -186,7 +186,7 @@ const SignupPage = () => {
                 />
                 <AuthInput
                     type='email'
-                    placeholder='Email'
+                    placeholder='Email*'
                     value={email.value}
                     isValid={email.isValid}
                     notValidMessage={email.notValidMessage}
@@ -200,7 +200,7 @@ const SignupPage = () => {
                 />
                 <AuthInput
                     type='text'
-                    placeholder='Username'
+                    placeholder='Username*'
                     value={username.value}
                     isValid={username.isValid}
                     notValidMessage={username.notValidMessage}
@@ -214,7 +214,7 @@ const SignupPage = () => {
                 />
                 <AuthInput
                     type='password'
-                    placeholder='Password'
+                    placeholder='Password*'
                     value={password.value}
                     isValid={password.isValid}
                     notValidMessage={password.notValidMessage}
@@ -228,7 +228,7 @@ const SignupPage = () => {
                 />
                 <AuthInput
                     type='password'
-                    placeholder='Confirm Password'
+                    placeholder='Confirm Password*'
                     value={confirmPassword.value}
                     isValid={confirmPassword.isValid}
                     notValidMessage={confirmPassword.notValidMessage}
@@ -258,6 +258,7 @@ const SignupPage = () => {
                     type='date'
                     value={dob.value}
                     isValid={dob.isValid}
+                    placeholder='DOB*'
                     notValidMessage={dob.notValidMessage}
                     onChange={(e) =>
                         setDob({
@@ -269,7 +270,7 @@ const SignupPage = () => {
                 />
                 <AuthInput
                     type='text'
-                    placeholder='Phone'
+                    placeholder='Phone*'
                     value={phone.value}
                     isValid={phone.isValid}
                     notValidMessage={phone.notValidMessage}
