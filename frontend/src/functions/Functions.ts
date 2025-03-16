@@ -5,7 +5,7 @@ export function getFromAssets(src: string) {
         localhostPath: '../../public/assets/',
     }
 
-    return new URL(paths.localhostPath + src, import.meta.url).href
+    return new URL(paths.deploymentPath + src, import.meta.url).href
 }
 
 export function changeTitle(title: string) {

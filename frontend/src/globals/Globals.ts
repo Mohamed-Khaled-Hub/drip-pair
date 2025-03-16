@@ -1,4 +1,5 @@
-export const SERVER_ENDPOINT = 'http://localhost:9817'
+// export const SERVER_ENDPOINT = 'http://localhost:9817'
+export const SERVER_ENDPOINT = "https://drip-pair-production.up.railway.app/"
 // Used to validate inputs before submitting any form
 export const VALIDATION_REGEX = {
     firstName: new RegExp('[a-zA-Z]'),
