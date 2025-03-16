@@ -1,0 +1,5 @@
+@import '../../App.css';
+
+div#signup-page {
+    @apply pb-5;
+}

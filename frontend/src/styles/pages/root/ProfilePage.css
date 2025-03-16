@@ -1,0 +1,33 @@
+@import '../../App.css';
+
+div#profile-page {
+    @apply w-full h-full grid grid-cols-2 gap-4 not-lg:grid-cols-1;
+
+    section {
+        @apply flex flex-col gap-2 p-3 rounded-xl border border-c1;
+
+        &:has(span) {
+            @apply flex flex-col justify-between;
+
+            span.buttons-field {
+                @apply flex justify-between;
+
+                #delete-account-button {
+                    @apply bg-c-red;
+                }
+            }
+        }
+
+        div.info-field {
+            @apply grid grid-cols-[30%_70%];
+
+            p {
+                @apply leading-tight;
+
+                &.identifier {
+                    @apply font-bold text-c1/25;
+                }
+            }
+        }
+    }
+}

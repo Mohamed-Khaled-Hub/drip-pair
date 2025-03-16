@@ -1,0 +1,38 @@
+@import '../App.css';
+
+a.shoe-card {
+    @apply w-(--shoe-card-width) h-(--shoe-card-height) border border-c1 rounded-sm overflow-hidden;
+    @apply grid grid-rows-[75%_25%];
+
+    div.top {
+        @apply aspect-square overflow-hidden;
+
+        img {
+            @apply object-cover;
+        }
+    }
+
+    div.bottom {
+        @apply w-full flex flex-col justify-between p-2 bg-c-white border-t border-c1 *:font-smooch-sans;
+
+        h1 {
+            @apply leading-tight w-(--shoe-card-width) -ml-2 -mr-4 px-2 font-extrabold truncate;
+        }
+
+        h2 {
+            @apply leading-tight font-medium text-sm -mt-0.5;
+        }
+
+        div.colors {
+            @apply flex gap-2;
+
+            div.color-container {
+                @apply w-4 aspect-square rounded-xs overflow-hidden border border-c1 flex;
+
+                div {
+                    @apply w-full;
+                }
+            }
+        }
+    }
+}

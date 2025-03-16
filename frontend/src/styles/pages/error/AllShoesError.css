@@ -1,0 +1,24 @@
+@import '../../App.css';
+
+div#an-brand-error,
+div#an-shoe-error,
+div#shoes-error,
+div#page-not-found {
+    @apply w-full flex flex-col items-center gap-2 px-2 *:text-center;
+
+    h1 {
+        @apply leading-tight text-6xl font-smooch-sans font-extrabold;
+    }
+
+    p {
+        @apply leading-tight text-xl;
+    }
+
+    a {
+        @apply mt-2;
+    }
+}
+
+div#page-not-found {
+    @apply pt-4;
+}

@@ -1,0 +1,5 @@
+@import '../../App.css';
+
+main#auth-main {
+    @apply flex justify-center min-h-[calc(100dvh-var(--nav-height))];
+}

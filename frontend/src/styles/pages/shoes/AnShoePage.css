@@ -1,0 +1,68 @@
+@import '../../App.css';
+
+div#an-shoe-page {
+    @apply grid grid-cols-2 not-lg:grid-cols-1;
+
+    div.left {
+        @apply lg:mr-4 not-lg:mb-4 border border-c1/15 rounded-2xl overflow-hidden flex items-center;
+        @apply not-lg:aspect-video;
+
+        img {
+            @apply object-cover;
+        }
+    }
+
+    div.right {
+        @apply lg:pl-4 not-lg:px-1 lg:py-2 not-lg:pt-3 flex flex-col gap-3 lg:border-l not-lg:border-t border-c1;
+
+        section {
+            @apply flex flex-col gap-2 border-dashed border-b-2 border-c1/15 pb-3;
+
+            &:last-of-type {
+                @apply border-none;
+            }
+
+            h1 {
+                @apply leading-tight font-bold text-2xl;
+            }
+
+            p.identifier {
+                @apply text-c1/25 flex items-center;
+            }
+
+            div.info-field {
+                @apply grid grid-cols-[20%_80%];
+
+                p {
+                    @apply font-bold flex items-center;
+                }
+            }
+
+            div.sizes-container,
+            div.colors-container {
+                @apply flex flex-wrap gap-2;
+            }
+
+            div.a-color-container,
+            div.a-size-container {
+                @apply w-8 aspect-square rounded-full overflow-hidden shadow shadow-2xl;
+                @apply flex select-none cursor-pointer border border-c1/25 duration-150;
+            }
+
+            div.a-size-container {
+                @apply flex items-center justify-center;
+            }
+
+            div.a-color-container {
+                div {
+                    @apply w-full;
+                }
+            }
+
+            div.current-size,
+            div.current-color {
+                @apply font-extrabold text-c-white bg-c2 border-4 border-c2 shadow-lg shadow-c2;
+            }
+        }
+    }
+}

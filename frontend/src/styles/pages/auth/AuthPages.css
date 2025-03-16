@@ -1,0 +1,23 @@
+@import '../../App.css';
+
+div#container:has(div#login-page, div#signup-page, div#change-password-page) {
+    @apply p-0;
+
+    div#login-page,
+    div#signup-page,
+    div#change-password-page {
+        @apply w-full flex flex-col gap-6 items-center justify-center;
+
+        h1 {
+            @apply leading-tight text-5xl font-extrabold font-smooch-sans;
+        }
+
+        form {
+            @apply w-2/5 not-lg:w-3/5 not-sm:w-4/5 flex flex-col items-center gap-4 *:w-2/3;
+
+            button {
+                @apply bg-c6 not-disabled:hover:brightness-125;
+            }
+        }
+    }
+}

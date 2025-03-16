@@ -1,0 +1,29 @@
+@import '../App.css';
+
+footer {
+    @apply flex justify-center items-center h-(--footer-height) bg-c-white border-t border-t-c1;
+
+    div#container {
+        @apply grid grid-rows-[70%_30%];
+
+        div.top {
+            @apply flex flex-col items-center justify-evenly;
+
+            div.logo-container {
+                @apply flex h-6;
+
+                img {
+                    @apply object-contain grayscale-100;
+                }
+            }
+
+            p {
+                @apply font-antonio font-bold;
+            }
+        }
+
+        div.bottom {
+            @apply flex justify-between items-center border-t border-t-c1/25;
+        }
+    }
+}

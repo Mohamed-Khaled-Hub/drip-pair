@@ -1,0 +1,59 @@
+@import '../App.css';
+
+div#sidebar-utils {
+    @apply sm:hidden;
+
+    div#black-screen {
+        @apply fixed w-screen h-screen bg-c1/90 backdrop-blur-lg top-0 left-0 z-(--black-screen-z);
+    }
+
+    div#sidebar {
+        @apply w-(--sidebar-width) h-screen fixed top-0 right-0 bg-c-white border-l border-c1 z-(--sidebar-z);
+        @apply flex flex-col overflow-y-auto;
+
+        div#sidebar-container {
+            @apply md:h-[calc(100dvh-var(--sidebar-top-height)-var(--sidebar-bottom-height))] not-md:h-(--sidebar-height);
+
+            div.top,
+            div.mid,
+            div.bottom {
+                @apply flex flex-col items-center px-3 py-2;
+            }
+
+            div.top {
+                @apply flex-row h-(--sidebar-top-height);
+
+                div {
+                    @apply w-5 h-5 flex items-center justify-center px-0.25 cursor-pointer;
+
+                    img {
+                        @apply object-cover w-5 aspect-square;
+                    }
+                }
+            }
+
+            div.mid {
+                @apply gap-2;
+                @apply xl:h-[calc(100dvh-var(--sidebar-top-height)-var(--sidebar-bottom-height))];
+                @apply not-xl:h-[calc(var(--screen-pc-height)-var(--sidebar-top-height)-var(--sidebar-bottom-height))];
+
+                a {
+                    @apply w-full px-2.5 py-1 rounded-xl font-bold;
+
+                    &.active {
+                        @apply bg-c2 text-c-white;
+                    }
+                }
+            }
+
+            div.bottom {
+                @apply h-(--sidebar-bottom-height) justify-end gap-2;
+
+                a,
+                button {
+                    @apply w-full text-center py-3 bg-c6;
+                }
+            }
+        }
+    }
+}

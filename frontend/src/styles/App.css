@@ -1,0 +1,68 @@
+@import 'tailwindcss';
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: 'Antonio';
+    src: url('../../public/assets/fonts/Antonio-VariableFont_wght.ttf');
+}
+
+@font-face {
+    font-family: 'PT Sans Narrow Regular';
+    src: url('../../public/assets/fonts/PTSansNarrow-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'PT Sans Narrow Bold';
+    src: url('../../public/assets/fonts/PTSansNarrow-Bold.ttf');
+}
+
+@font-face {
+    font-family: 'Smooch Sans';
+    src: url('../../public/assets/fonts/SmoochSans-VariableFont_wght.ttf');
+}
+
+@theme {
+    /* Heights */
+    --nav-height: 6.25rem; /* 100px */
+    --footer-height: 9.375rem; /* 150px */
+    --sidebar-width: 15.625rem; /* 250px */
+    --sidebar-top-height: 3.125rem; /* 50px */
+    --sidebar-bottom-height: 12.5rem; /* 200px */
+    --shoe-card-width: 15.625rem; /* 250px */
+    --shoe-card-height: 18.75rem; /* 300px */
+    /* Those in px */
+    --screen-pc-height: 710px;
+    --screen-pc-width: 1536px;
+
+    /* Fonts */
+    --font-antonio: 'Antonio', sans-serif;
+    --font-pt-sans-narrow: 'PT Sans Narrow Regular', sans-serif;
+    --font-pt-sans-narrow-bold: 'PT Sans Narrow Bold', sans-serif;
+    --font-smooch-sans: 'Smooch Sans', sans-serif;
+
+    /* Colors */
+    --color-c1: #050505;
+    --color-c2: #85cb33;
+    --color-c3: #efffc8;
+    --color-c4: #a5cbc3;
+    --color-c5: #4a8276;
+    --color-c6: #3b341f;
+    --color-c7: #867646;
+    --color-c-white: #fbfbfb;
+    --color-c-gray: #c1c1c1;
+    --color-c-red: #f03a47;
+
+    /* Z-Index */
+    --loading-z: 100;
+    --sidebar-z: 99;
+    --black-screen-z: 98;
+    --nav-z: 97;
+}
+
+@layer base {
+    :root {
+        @apply font-pt-sans-narrow text-c1;
+    }
+}

@@ -1,0 +1,7 @@
+@import '../App.css';
+
+.custom-button {
+    @apply bg-c2 px-6 py-4 font-extrabold cursor-pointer rounded-xl text-white text-xl uppercase shadow shadow-lg;
+    @apply duration-150 not-disabled:hover:brightness-105 not-disabled:active:brightness-90;
+    @apply disabled:grayscale-100 disabled:cursor-default;
+}
