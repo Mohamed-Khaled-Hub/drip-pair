@@ -28,4 +28,4 @@ app.use('/users', UsersRoutes)
 app.use(errorHandler)
 
 const port = process.env.SERVER_PORT
-app.listen(port, () => console.log(`Listening on http://localhost:${port}`))
+app.listen(port, () => console.log(`Listening on ${process.env.SERVER_URL}:${port}`))
